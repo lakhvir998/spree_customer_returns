@@ -19,7 +19,7 @@
     </thead>
 
     <tbody>
-      <% if @return_authorizations.present? %>
+      <% if @return_authorizations.any? %>
         <% @return_authorizations.each do |return_authorization| %>
           <% order = return_authorization.order %>
           <tr>
